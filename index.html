@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyMind AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+
+            <h1>📚 StudyMind AI</h1>
+
+            <p>
+                Your Personal AI Study Buddy
+            </p>
+
+            <div class="status">
+                🟢 AI Assistant Online
+            </div>
+
+        </div>
+
+
+        <!-- Chat Box -->
+        <div class="chat-box">
+
+            <div id="messages">
+
+                <div class="bot-message welcome-message">
+
+                    <div class="welcome-title">
+                        👋 Hi! I'm StudyMind AI
+                    </div>
+
+                    <p>
+                        I'm here to help you learn, practice and
+                        track your study progress.
+                    </p>
+
+                    <p>
+                        What would you like to do today? 😊
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+
+                <button onclick="quickMessage('Show my progress')">
+                    📊
+                    <span>Show My Progress</span>
+                </button>
+
+                <button onclick="quickMessage('Start practice')">
+                    📝
+                    <span>Start Practice</span>
+                </button>
+
+            </div>
+
+
+            <!-- Input -->
+            <div class="input-area">
+
+                <input type="text" id="userInput" placeholder="Ask StudyMind anything..."
+                    onkeydown="if(event.key === 'Enter') sendMessage()">
+
+                <button class="send-button" onclick="sendMessage()">
+                    Send ➤
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Features -->
+        <div class="features">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🤖
+                </div>
+
+                <h3>AI Study Assistant</h3>
+
+                <p>
+                    Get simple explanations for difficult topics.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📝
+                </div>
+
+                <h3>Practice Quizzes</h3>
+
+                <p>
+                    Test your knowledge with AI-generated quizzes.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📊
+                </div>
+
+                <h3>Track Progress</h3>
+
+                <p>
+                    See your scores and learning progress.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🎯
+                </div>
+
+                <h3>Smart Recommendations</h3>
+
+                <p>
+                    Get suggestions on what to study next.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footer">
+
+            <p>
+                StudyMind AI • Your Personal AI Study Buddy
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
